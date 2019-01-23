@@ -181,6 +181,26 @@ td,
 th {
   padding: 0; }
 
+.main-nav a.active {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
+  font-weight: 400;
+  color: #F6546A; }
+
+.events {
+  max-width: 250px;
+  max-height: 100px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
+  font-weight: 400; }
+
+.sideSection {
+  max-width: 300px;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px; }
+
 html {
   box-sizing: border-box; }
 
@@ -190,7 +210,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: white;
+  background: #E4E4E4;
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -205,6 +225,10 @@ body {
 
 section {
   display: -webkit-box; }
+
+.eicons {
+  max-width: 30px;
+  height: 30px; }
 
 .button,
 button,
@@ -243,7 +267,7 @@ input[type="button"] {
     transform: translateY(3px); }
 
 a {
-  color: #0074D9;
+  color: #103346;
   text-decoration: none;
   outline: 0; }
   a:hover, a:focus {
@@ -327,6 +351,65 @@ hr {
   margin: 10px 0 30px;
   height: 0; }
 
+.heading {
+  font-size: 26px;
+  font-family: century, arial;
+  font-weight: 400;
+  color: #050729; }
+
+.main-nav {
+  display: flex;
+  margin-top: 30px; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav li:first-child {
+    margin-right: auto;
+    margin-top: -20px; }
+  .main-nav a {
+    text-decoration: none;
+    color: #103346;
+    padding: 10px 30px;
+    display: block;
+    font: 18px century,arial; }
+
+.profilePic {
+  width: 135px;
+  height: 135px;
+  border-radius: 50%;
+  border: 4px solid #F5B041;
+  margin-left: 69px; }
+
+.userName {
+  font-weight: 400;
+  font-family: georgia,arial;
+  color: #F6546A;
+  font-size: 25px;
+  margin-top: 20px; }
+
+.side {
+  display: flex; }
+
+.sideSection .events {
+  margin: 0 auto 15px auto;
+  display: flex; }
+  .sideSection .events img {
+    margin: auto 25px auto 20px; }
+  .sideSection .events h4 {
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 17px;
+    font-family: georgia, arial;
+    text-align: left; }
+
+.sideSection .birthday h4 {
+  color: #F6546A; }
+
+.sideSection .anniversary h4 {
+  color: #F5B041; }
+
+.sideSection .other h4 {
+  color: #103346; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -349,24 +432,3 @@ hr {
   height: 109px;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54); }
-
-.main-nav {
-  display: flex;
-  margin-top: 30px; }
-  .main-nav li {
-    list-style: none; }
-  .main-nav li:first-child {
-    margin-right: auto;
-    margin-top: -20px; }
-  .main-nav a {
-    text-decoration: none;
-    color: #103346;
-    padding: 10px 30px;
-    display: block;
-    font: 18px century,arial; }
-
-a.active {
-  background-color: #fff;
-  color: #F6546A;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
-  font-weight: 540; }
