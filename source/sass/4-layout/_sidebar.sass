@@ -12,29 +12,19 @@
   margin-top: 20px
 .side
   display: flex
+  justify-content: space-between
+  align-items: flex-start
 
 .sideSection
   @extend %side_properties
-  .events
-    margin: 0 auto 15px auto
-    display: flex
-    img
-      margin: auto 25px auto 20px
-    h4
-      margin-right: 15px
-      font-weight: 400
-      font-size: 17px
-      font-family: georgia, arial
-      text-align: left
-  .birthday
-    h4
-      color: $rempink
-  .anniversary
-    h4
-      color: $remyellow
-  .other
-    h4
-      color: $remnavy
+  margin-left: -2.3%
 
 .rightSection
-  
+  @extend %side_properties
+  margin-right: -6.4%
+  margin-top: 120px
+.date
+  color: $remnavy
+  font-size: 15px
+  font-family: century,arial
+  margin: -15px auto 10px auto

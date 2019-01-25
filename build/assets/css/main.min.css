@@ -195,11 +195,40 @@ th {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
   font-weight: 400; }
 
-.sideSection {
+.calendar {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
+  font-weight: 400; }
+
+.sideSection, .rightSection {
   max-width: 300px;
   width: 100%;
   text-align: center;
-  margin-top: 30px; }
+  margin-top: 150px; }
+  .sideSection .events, .rightSection .events {
+    margin: 0 auto 15px auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: auto; }
+    .sideSection .events img, .rightSection .events img {
+      margin: auto 25px auto 20px; }
+    .sideSection .events h4, .rightSection .events h4 {
+      margin-right: 15px;
+      font-weight: 400;
+      font-size: 17px;
+      font-family: georgia, arial;
+      text-align: left;
+      margin-bottom: 20px;
+      margin-top: 20px; }
+  .sideSection .birthday h4, .rightSection .birthday h4 {
+    color: #F6546A; }
+  .sideSection .anniversary h4, .rightSection .anniversary h4 {
+    color: #F5B041;
+    max-width: 135px;
+    width: 100%; }
+  .sideSection .other h4, .rightSection .other h4 {
+    color: #103346; }
 
 html {
   box-sizing: border-box; }
@@ -241,11 +270,9 @@ input[type="button"] {
   text-align: center;
   font-size: 14px;
   font-weight: 600;
-  text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
   background-color: white;
-  border-radius: 4px;
   cursor: pointer;
   box-sizing: border-box;
   transition: all 0.2s ease; }
@@ -371,6 +398,8 @@ hr {
     padding: 10px 30px;
     display: block;
     font: 18px century,arial; }
+  .main-nav a.logo {
+    padding: 10px 0; }
 
 .profilePic {
   width: 135px;
@@ -387,28 +416,29 @@ hr {
   margin-top: 20px; }
 
 .side {
-  display: flex; }
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
 
-.sideSection .events {
-  margin: 0 auto 15px auto;
-  display: flex; }
-  .sideSection .events img {
-    margin: auto 25px auto 20px; }
-  .sideSection .events h4 {
-    margin-right: 15px;
-    font-weight: 400;
-    font-size: 17px;
-    font-family: georgia, arial;
-    text-align: left; }
+.sideSection {
+  margin-left: -2.3%; }
 
-.sideSection .birthday h4 {
-  color: #F6546A; }
+.rightSection {
+  margin-right: -6.4%;
+  margin-top: 120px; }
 
-.sideSection .anniversary h4 {
-  color: #F5B041; }
+.date {
+  color: #103346;
+  font-size: 15px;
+  font-family: century,arial;
+  margin: -15px auto 10px auto; }
 
-.sideSection .other h4 {
-  color: #103346; }
+.calendar {
+  max-width: 610px;
+  width: 100%;
+  height: 586px;
+  margin-top: 148px;
+  margin-left: -30px; }
 
 .flex-video {
   height: 0;
@@ -431,4 +461,5 @@ hr {
   width: 100%;
   height: 109px;
   background-color: #fff;
-  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54); }
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
+  position: fixed; }
