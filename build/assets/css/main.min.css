@@ -200,6 +200,14 @@ th {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
   font-weight: 400; }
 
+.calHeader {
+  max-width: 230px;
+  width: 100%;
+  height: 60px;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
+  font-weight: 400; }
+
 .sideSection, .rightSection {
   max-width: 300px;
   width: 100%;
@@ -239,7 +247,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #E4E4E4;
+  background: #e4e4e4;
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -418,7 +426,8 @@ hr {
 .side {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start; }
+  align-items: flex-start;
+  flex-wrap: wrap; }
 
 .sideSection {
   margin-left: -2.3%; }
@@ -439,6 +448,36 @@ hr {
   height: 586px;
   margin-top: 148px;
   margin-left: -30px; }
+  .calendar .headBackground {
+    max-width: 610px;
+    width: 100%;
+    max-height: 230px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("../img/spotLight.jpg");
+    background-position: 50% 20%;
+    background-size: cover; }
+  .calendar .calHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .calendar .calHeader .monthName {
+      font-size: 25px;
+      font-family: century,arial;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #050729;
+      letter-spacing: 8px; }
+  .calendar .calDates {
+    max-width: 566px;
+    width: 100%;
+    max-height: 315px;
+    height: 100%;
+    background-color: red;
+    margin: 20px auto; }
 
 .flex-video {
   height: 0;
