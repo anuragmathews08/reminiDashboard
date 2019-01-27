@@ -188,9 +188,8 @@ th {
   color: #F6546A; }
 
 .events {
-  max-width: 250px;
-  max-height: 100px;
-  width: 100%;
+  width: 249px;
+  height: auto;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
   font-weight: 400; }
@@ -201,8 +200,7 @@ th {
   font-weight: 400; }
 
 .calHeader {
-  max-width: 230px;
-  width: 100%;
+  width: 230px;
   height: 60px;
   background-color: #fff;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
@@ -247,7 +245,7 @@ html {
   box-sizing: inherit; }
 
 body {
-  background: #e4e4e4;
+  background: rgba(235, 235, 235, 0.5);
   font-size: 14px;
   line-height: 1.6;
   font-size: 14px;
@@ -414,7 +412,7 @@ hr {
   height: 135px;
   border-radius: 50%;
   border: 4px solid #F5B041;
-  margin-left: 69px; }
+  margin-left: 63px; }
 
 .userName {
   font-weight: 400;
@@ -425,16 +423,20 @@ hr {
 
 .side {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap; }
+  justify-content: center;
+  align-items: center; }
+
+#main-area {
+  width: 100%; }
 
 .sideSection {
-  margin-left: -2.3%; }
+  margin-left: 25%;
+  margin-right: 55px; }
 
 .rightSection {
-  margin-right: -6.4%;
-  margin-top: 120px; }
+  margin-right: -50px;
+  margin-top: -10px;
+  margin-left: 40px; }
 
 .date {
   color: #103346;
@@ -443,16 +445,14 @@ hr {
   margin: -15px auto 10px auto; }
 
 .calendar {
-  max-width: 610px;
+  width: 610px;
   width: 100%;
   height: 586px;
   margin-top: 148px;
-  margin-left: -30px; }
+  margin-right: 11px; }
   .calendar .headBackground {
-    max-width: 610px;
-    width: 100%;
-    max-height: 230px;
-    height: 100%;
+    width: 610px;
+    height: 230px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -472,8 +472,7 @@ hr {
       color: #050729;
       letter-spacing: 8px; }
   .calendar .calDates {
-    max-width: 566px;
-    width: 100%;
+    width: 566px;
     max-height: 315px;
     height: 100%;
     background-color: red;
