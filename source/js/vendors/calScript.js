@@ -49,6 +49,7 @@ function get_calendar(day_no,total_days,month){
       var count = 1;
       for(; d<=6; d++){
           var td = document.createElement('td');
+          $(td).addClass('dates');
           td.innerHTML = count;
           count++;
           tr.appendChild(td);
@@ -66,6 +67,7 @@ function get_calendar(day_no,total_days,month){
                 return table;
               }
               var td = document.createElement('td');
+              $(td).addClass('dates');
               td.innerHTML = count;
               count++;
               tr.appendChild(td);

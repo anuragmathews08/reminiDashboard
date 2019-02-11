@@ -48,6 +48,30 @@
           <div id="monthCal">
               <div id="mNames"></div>
           </div>
+        <div id="addEvent">
+          <h3>Add Event</h3>
+          <p id="cancel">cancel</p>
+          <form action="#addevent.php" method="post" id="eventForm">
+            <label for="description">Description
+            <input type="text" name="description" value="" placeholder="Ex :- Kevin's Birthday" required>
+            </label>
+            <label for="date">Date
+            <input type="text" id="date-field"name="eventDate" value="04/02/19" readonly>
+            </label>
+            <label for="occasion">Occasion</label>
+            <label class="radio-button">
+            <input type="radio" name="eventType" value="Birthday" required/>
+            <img src="assets/img/cake.png" alt=""class="occasionIcons">Birthday
+            </label>
+            <label class="radio-button">
+            <input type="radio" name="eventType" value="Anniversary" required/>
+            <img src="assets/img/rings.png" alt=""class="occasionIcons">Anniversary</label>
+            <label class="radio-button">
+            <input type="radio" name="eventType" value="Other" required/>
+            <img src="assets/img/calendar.png" alt=""class="occasionIcons">Other</label>
+            <input type="submit" name="submit" value="Submit">
+          </form>
+        </div>
         <div class="calendar">
           <div class="headBackground">
             <div class="calHeader button">

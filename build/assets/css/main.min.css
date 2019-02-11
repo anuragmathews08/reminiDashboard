@@ -478,18 +478,22 @@ hr {
     font-family: century; }
 
 table {
-  border-spacing: 44px 10px;
+  border-spacing: 43px 12px;
   border-collapse: separate;
   margin-top: 20px; }
 
 td {
   text-align: center;
   border-radius: 50%;
-  padding: 5px 7px; }
+  padding: 5px 8px;
+  margin: 2px; }
 
 .highlight {
   background-color: #F5B041;
-  color: #F6546A; }
+  color: white; }
+
+.dates {
+  cursor: pointer; }
 
 tr :first-child {
   color: #F6546A; }
@@ -531,6 +535,85 @@ tr :first-child {
   background-color: #0e0e0e;
   opacity: 0.7;
   z-index: 9999; }
+
+#addEvent {
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
+  background-color: #f8f8f8;
+  width: 350px;
+  height: auto;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  display: none;
+  z-index: 9999; }
+
+#cancel {
+  position: relative;
+  float: right;
+  top: -50px;
+  margin-right: 10px;
+  cursor: pointer; }
+
+#cancel:hover {
+  color: #F6546A; }
+
+h3 {
+  margin-top: 10px;
+  font-weight: 400px;
+  font-size: 23px;
+  font-family: century;
+  letter-spacing: 2px;
+  margin-right: 0px; }
+
+form {
+  width: 200px;
+  height: auto;
+  text-align: left;
+  margin: 0 auto 0 20px; }
+  form label {
+    display: block;
+    margin: 20px 2px;
+    font-family: century;
+    font-size: 20px; }
+  form input[type="submit"] {
+    border: none;
+    background-color: white;
+    color: #103346;
+    padding: 5px 15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54);
+    height: auto;
+    margin-left: 100px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px; }
+  form input[type="text"] {
+    margin-top: 7px;
+    width: 250px;
+    padding: 13px 7px;
+    font-size: 15px;
+    border: none;
+    background-color: white;
+    color: #103346;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.54); }
+  form label.radio-button {
+    font-size: 18px;
+    margin: 15px 2px; }
+
+#date-field {
+  width: 100px;
+  display: block;
+  font-size: 15px;
+  padding: 10px 7px;
+  text-align: center;
+  letter-spacing: 2px; }
+
+.occasionIcons {
+  width: 30px;
+  margin-left: 4px;
+  margin-right: 12px;
+  position: relative;
+  top: 5px; }
 
 #footer {
   width: 100%;
